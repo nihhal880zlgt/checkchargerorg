@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -8,17 +10,89 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>CheckCharger - Charger Compatibility Checker</title>
+    <title>
+        Charger Compatibility Checker | CheckCharger
+    </title>
+
+    <meta
+        name="description"
+        content="Check your phone, tablet, laptop or other device's charging requirements and see whether your charger has enough power capacity."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="author"
+        content="CheckCharger"
+    >
+
+    <link
+        rel="canonical"
+        href="https://checkchargerorg.checkcharger.workers.dev/"
+    >
 
     <link
         rel="stylesheet"
         href="style.css"
     >
+
+
+    <!-- ============================== -->
+    <!-- OPEN GRAPH -->
+    <!-- ============================== -->
+
+    <meta
+        property="og:title"
+        content="Charger Compatibility Checker | CheckCharger"
+    >
+
+    <meta
+        property="og:description"
+        content="Check your device's charging requirements and see whether your charger has enough power capacity."
+    >
+
+    <meta
+        property="og:url"
+        content="https://checkchargerorg.checkcharger.workers.dev/"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:site_name"
+        content="CheckCharger"
+    >
+
+
+    <!-- ============================== -->
+    <!-- STRUCTURED DATA -->
+    <!-- ============================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "CheckCharger",
+        "url": "https://checkchargerorg.checkcharger.workers.dev/",
+        "description": "A charger compatibility checker that helps users find device charging requirements and compare them with charger wattage.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any"
+    }
+    </script>
+
 </head>
+
 
 <body>
 
     <main class="container">
+
 
         <!-- ============================== -->
         <!-- HEADER -->
@@ -29,8 +103,9 @@
             <h1>CheckCharger</h1>
 
             <p>
-                Find out what charger your device needs
-                and whether your charger has enough power.
+                Check your device's charging requirements
+                and find out whether your charger has enough
+                power capacity.
             </p>
 
         </header>
@@ -46,9 +121,6 @@
 
             <!--
                 FUTURE ADSENSE CODE GOES HERE
-
-                Example:
-                <ins class="adsbygoogle" ...></ins>
             -->
 
         </div>
@@ -65,8 +137,9 @@
             </h2>
 
             <p class="section-description">
-                Search for your device to see its
-                charging specifications.
+                Search for your phone, tablet, laptop
+                or other device to see its charging
+                specifications.
             </p>
 
 
@@ -75,8 +148,9 @@
                 <input
                     type="text"
                     id="deviceSearch"
-                    placeholder="e.g. Galaxy S25 Ultra"
+                    placeholder="e.g. Samsung Galaxy S22 Ultra"
                     autocomplete="off"
+                    aria-label="Search for your device"
                 >
 
                 <div
@@ -122,7 +196,8 @@
 
             <p class="section-description">
                 Select your charger's maximum wattage
-                to check its power capacity.
+                to check its power capacity against
+                your device.
             </p>
 
 
@@ -134,7 +209,10 @@
             </label>
 
 
-            <select id="chargerWattage">
+            <select
+                id="chargerWattage"
+                aria-label="Select charger wattage"
+            >
 
                 <option value="">
                     Select charger wattage
@@ -195,6 +273,39 @@
 
 
         <!-- ============================== -->
+        <!-- ABOUT CHECKCHARGER -->
+        <!-- ============================== -->
+
+        <section class="card">
+
+            <h2>
+                How does CheckCharger work?
+            </h2>
+
+            <p>
+                CheckCharger compares your device's
+                maximum listed charging power with the
+                power capacity of your charger.
+            </p>
+
+            <p>
+                A charger with a higher wattage rating
+                does not automatically force that amount
+                of power into your device. Actual charging
+                depends on the device, charger, cable and
+                charging protocol.
+            </p>
+
+            <p>
+                Use the device search above to find
+                available charging information for
+                supported devices.
+            </p>
+
+        </section>
+
+
+        <!-- ============================== -->
         <!-- DISCLAIMER -->
         <!-- ============================== -->
 
@@ -236,4 +347,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
