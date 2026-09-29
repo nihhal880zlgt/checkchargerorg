@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://checkchargerorg.checkcharger.workers.dev/sitemap.xml
