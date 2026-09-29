@@ -1,0 +1,481 @@
+/* ============================== */
+/* GLOBAL */
+/* ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: #f3f4f6;
+
+    color: #1f2937;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    line-height: 1.5;
+}
+
+
+/* ============================== */
+/* MAIN CONTAINER */
+/* ============================== */
+
+.container {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding: 35px 20px 50px;
+}
+
+
+/* ============================== */
+/* HEADER */
+/* ============================== */
+
+.site-header {
+    text-align: center;
+
+    margin-bottom: 28px;
+}
+
+
+.site-header h1 {
+    margin: 0;
+
+    font-size: 42px;
+    line-height: 1.1;
+
+    color: #111827;
+}
+
+
+.site-header p {
+    margin: 12px auto 0;
+
+    max-width: 560px;
+
+    font-size: 17px;
+
+    color: #6b7280;
+}
+
+
+/* ============================== */
+/* CARDS */
+/* ============================== */
+
+.card {
+    background: white;
+
+    padding: 28px;
+
+    margin-bottom: 30px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+.card h2 {
+    margin: 0 0 8px;
+
+    font-size: 24px;
+
+    color: #111827;
+}
+
+
+.section-description {
+    margin: 0 0 20px;
+
+    color: #6b7280;
+
+    font-size: 15px;
+}
+
+
+/* ============================== */
+/* INPUTS */
+/* ============================== */
+
+input,
+select,
+button {
+    width: 100%;
+
+    font-family: inherit;
+
+    font-size: 16px;
+}
+
+
+input,
+select {
+    padding: 13px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #111827;
+
+    outline: none;
+}
+
+
+input:focus,
+select:focus {
+    border-color: #6b7280;
+
+    box-shadow:
+        0 0 0 3px rgba(107, 114, 128, 0.12);
+}
+
+
+.input-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+
+/* ============================== */
+/* SEARCH */
+/* ============================== */
+
+.search-wrapper {
+    position: relative;
+}
+
+
+.device-results {
+    width: 100%;
+
+    margin-top: 6px;
+
+    border-radius: 9px;
+
+    overflow: hidden;
+}
+
+
+.device-option {
+    padding: 12px 14px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-bottom: none;
+
+    cursor: pointer;
+
+    transition:
+        background 0.15s ease;
+}
+
+
+.device-option:last-child {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.device-option:hover {
+    background: #f9fafb;
+}
+
+
+.device-brand {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    color: #6b7280;
+
+    letter-spacing: 0.4px;
+}
+
+
+.device-name {
+    margin-top: 2px;
+
+    font-size: 16px;
+
+    color: #111827;
+}
+
+
+/* ============================== */
+/* RESULT BOX */
+/* ============================== */
+
+.result {
+    margin-top: 22px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background: #f9fafb;
+
+    border: 1px solid #e5e7eb;
+}
+
+
+.result.hidden {
+    display: none;
+}
+
+
+.result h3 {
+    margin: 0 0 18px;
+
+    font-size: 20px;
+
+    color: #111827;
+}
+
+
+.result p {
+    margin: 8px 0;
+
+    color: #4b5563;
+}
+
+
+.spec-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.spec-row:last-child {
+    border-bottom: none;
+}
+
+
+.spec-row strong {
+    color: #374151;
+}
+
+
+.spec-row span {
+    text-align: right;
+
+    color: #111827;
+}
+
+
+/* ============================== */
+/* BUTTON */
+/* ============================== */
+
+button {
+    margin-top: 15px;
+
+    padding: 13px 16px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #111827;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.15s ease,
+        transform 0.1s ease;
+}
+
+
+button:hover {
+    background: #374151;
+}
+
+
+button:active {
+    transform: translateY(1px);
+}
+
+
+/* ============================== */
+/* AD SPACES */
+/* ============================== */
+
+.ad-space {
+    width: 100%;
+
+    min-height: 120px;
+
+    margin: 30px 0;
+
+    padding: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: #fafafa;
+
+    border: 1px dashed #d1d5db;
+
+    border-radius: 10px;
+
+    color: #9ca3af;
+
+    font-size: 11px;
+
+    letter-spacing: 0.4px;
+
+    text-transform: uppercase;
+}
+
+
+/*
+    The placeholder is intentionally subtle.
+
+    When real AdSense code is added later,
+    the ad can occupy this area without
+    changing the page layout.
+*/
+
+
+/* ============================== */
+/* DISCLAIMER */
+/* ============================== */
+
+.disclaimer {
+    margin-top: 10px;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    background: #fff;
+
+    border: 1px solid #e5e7eb;
+
+    color: #6b7280;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+.disclaimer strong {
+    color: #374151;
+}
+
+
+/* ============================== */
+/* FOOTER */
+/* ============================== */
+
+.footer {
+    padding-top: 30px;
+
+    text-align: center;
+
+    color: #9ca3af;
+
+    font-size: 13px;
+}
+
+
+.footer p {
+    margin: 0;
+}
+
+
+/* ============================== */
+/* MOBILE */
+/* ============================== */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding:
+            25px 14px 40px;
+    }
+
+
+    .site-header h1 {
+        font-size: 34px;
+    }
+
+
+    .site-header p {
+        font-size: 15px;
+    }
+
+
+    .card {
+        padding: 20px;
+
+        border-radius: 12px;
+    }
+
+
+    .card h2 {
+        font-size: 21px;
+    }
+
+
+    .spec-row {
+        flex-direction: column;
+
+        gap: 3px;
+    }
+
+
+    .spec-row span {
+        text-align: left;
+    }
+
+
+    .ad-space {
+        min-height: 100px;
+
+        margin: 24px 0;
+    }
+
+}

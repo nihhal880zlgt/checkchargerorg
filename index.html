@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CheckCharger - Charger Compatibility Checker</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- ============================== -->
+        <!-- HEADER -->
+        <!-- ============================== -->
+
+        <header class="site-header">
+
+            <h1>CheckCharger</h1>
+
+            <p>
+                Find out what charger your device needs
+                and whether your charger has enough power.
+            </p>
+
+        </header>
+
+
+        <!-- ============================== -->
+        <!-- AD SPACE 1 -->
+        <!-- ============================== -->
+
+        <div class="ad-space">
+
+            <span>Advertisement</span>
+
+            <!--
+                FUTURE ADSENSE CODE GOES HERE
+
+                Example:
+                <ins class="adsbygoogle" ...></ins>
+            -->
+
+        </div>
+
+
+        <!-- ============================== -->
+        <!-- DEVICE CHECKER -->
+        <!-- ============================== -->
+
+        <section class="card">
+
+            <h2>
+                What charger does my device need?
+            </h2>
+
+            <p class="section-description">
+                Search for your device to see its
+                charging specifications.
+            </p>
+
+
+            <div class="search-wrapper">
+
+                <input
+                    type="text"
+                    id="deviceSearch"
+                    placeholder="e.g. Galaxy S25 Ultra"
+                    autocomplete="off"
+                >
+
+                <div
+                    id="deviceResults"
+                    class="device-results"
+                ></div>
+
+            </div>
+
+
+            <div
+                id="result"
+                class="result hidden"
+            ></div>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- AD SPACE 2 -->
+        <!-- ============================== -->
+
+        <div class="ad-space">
+
+            <span>Advertisement</span>
+
+            <!--
+                FUTURE ADSENSE CODE GOES HERE
+            -->
+
+        </div>
+
+
+        <!-- ============================== -->
+        <!-- COMPATIBILITY CHECKER -->
+        <!-- ============================== -->
+
+        <section class="card">
+
+            <h2>
+                Can I use my charger?
+            </h2>
+
+            <p class="section-description">
+                Select your charger's maximum wattage
+                to check its power capacity.
+            </p>
+
+
+            <label
+                for="chargerWattage"
+                class="input-label"
+            >
+                Charger wattage
+            </label>
+
+
+            <select id="chargerWattage">
+
+                <option value="">
+                    Select charger wattage
+                </option>
+
+                <option value="5">5 W</option>
+                <option value="10">10 W</option>
+                <option value="12">12 W</option>
+                <option value="18">18 W</option>
+                <option value="20">20 W</option>
+                <option value="25">25 W</option>
+                <option value="30">30 W</option>
+                <option value="45">45 W</option>
+                <option value="60">60 W</option>
+                <option value="65">65 W</option>
+                <option value="70">70 W</option>
+                <option value="80">80 W</option>
+                <option value="100">100 W</option>
+                <option value="120">120 W</option>
+                <option value="125">125 W</option>
+                <option value="140">140 W</option>
+                <option value="180">180 W</option>
+                <option value="240">240 W</option>
+
+            </select>
+
+
+            <button
+                type="button"
+                id="checkButton"
+                onclick="checkCompatibility()"
+            >
+                Check compatibility
+            </button>
+
+
+            <div
+                id="compatibility"
+                class="result hidden"
+            ></div>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- AD SPACE 3 -->
+        <!-- ============================== -->
+
+        <div class="ad-space">
+
+            <span>Advertisement</span>
+
+            <!--
+                FUTURE ADSENSE CODE GOES HERE
+            -->
+
+        </div>
+
+
+        <!-- ============================== -->
+        <!-- DISCLAIMER -->
+        <!-- ============================== -->
+
+        <div class="disclaimer">
+
+            <strong>Important:</strong>
+
+            Charging speed depends on more than
+            wattage alone. The charger, device,
+            charging protocol, cable and other
+            factors can affect actual charging speed.
+
+            CheckCharger provides informational
+            estimates and should not be treated as
+            a manufacturer's specification.
+
+        </div>
+
+
+        <!-- ============================== -->
+        <!-- FOOTER -->
+        <!-- ============================== -->
+
+        <footer class="footer">
+
+            <p>
+                CheckCharger
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- ============================== -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
